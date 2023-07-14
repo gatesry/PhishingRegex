@@ -1,8 +1,15 @@
---------------------POTENTIAL LINKS TO HACKED WEBSITES-------------------
+-------------------POTENTIAL LINKS TO HACKED WEBSITES-------------------
 
 /wp-admin/
 /wp-includes/
 /wp-content/(?!\S{0,60}Campaign\S{0,2}\=)(?!\S{0,60}\.pdf[<\"\t\r\n])(?!\S{0,60}\.jpg[<"\t\r\n])
+/%[0-9A-Fa-f]{2}/
+/http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/
+/http:\/\/.{30,}/
+/.\.(tk|ml|cf|gq|ga)\//
+/data:[^,;]+base64/
+/<!--.*-->/
+/\\x[0-9A-Fa-f]{2}/
 
 -------------------SUSPICIOUS PATTERNS-------------------
 
@@ -72,6 +79,26 @@ is\.gd/
 tiny\.cc/
 \.joburg
 \.top/
+http(s)?:\/\/\S{0,20}paypal
+http(s)?:\/\/\S{0,20}amazon
+http(s)?:\/\/\S{0,20}bank
+/urgent\s*action\s*required/
+/unusual\s*sign-in\s*activity/
+/suspicious\s*login\s*attempt/
+/your\s*account\s*will\s*be\s*suspended/
+/click\s*here\s*to\s*verify/
+/confirm\s*your\s*email/
+/unauthorized\s*payment/
+/security\s*alert/
+/account\s*notification/
+/security\s*notice/
+/payment\s*declined/
+/login\s*from\s*a\s*different\s*device/
+http(s)?://[^\s]*@[^\s]*
+/credit\s*card\s*update/
+/reset\s*your\s*password/
+http(s)?://[^\s]+\.link
+/account\s*recovery/
 
 -------------------SUSPICIOUS PHRASES-------------------
 
@@ -96,30 +123,19 @@ was blocked for violation
 urged to download
 that you validate your account
 multiple login attempt
-trying to access your account
-suspend your account
-restricted if you fail to update
-informations on your account
-update your account information
-update in our security
-Account Was Limited
-verify and reactivate
-
---------------------SUSPICIOUS SUBJECTS-------------------
-
-has\ been\ limited
-We\ have\ locked
-has\ been\ suspended
-unusual\ activity
-notifications\ pending
-your\ (customer\ )?account\ has
-your\ (customer\ )?account\ was
-new voice(\ )?mail
-Periodic\ Maintenance
-refund\ not\ approved
-account\ (is\ )?on\ hold
-wire\ transfer
-secure\ update
-temporar(il)?y\ deactivated
-verification\ required
-
+trying to access your
+has been temporarily locked
+confirm your account
+new pending transfer
+update your billing
+a new transfer
+conform your account
+a password change request
+to ensure that your account remains safe
+immediate action required
+as soon as possible
+was made from a new
+your account will be disable
+verify your information
+You are receiving this email because we noticed
+CONFIRMATION REQUIRED
